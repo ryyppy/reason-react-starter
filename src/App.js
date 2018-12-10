@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import Greetings from "./Greetings.bs";
+import Greetings from "./Greetings.gen";
 import "./App.css";
 
 class App extends Component {

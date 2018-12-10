@@ -13,8 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "bsb": "bsb -make-world",
-    "bsb:watch": "bsb -make-world -w",
+    "bsb": "export BS_CMT_POST_PROCESS_CMD=\"gentype\" && bsb -make-world",
+    "bsb:watch": "export BS_CMT_POST_PROCESS_CMD=\"gentype\" && bsb -make-world -w",
     "bsb:clean": "bsb -clean-world"
   },
   "eslintConfig": {
@@ -27,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "bs-platform": "^4.0.8"
+    "bs-platform": "^4.0.7",
+    "gentype": "^1.6.0"
   }
 }
